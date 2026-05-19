@@ -1,5 +1,5 @@
-import { writeFileAsync, readFileAsync } from './fileHelpers';
 import { getAllExpenses, replaceAllExpenses } from './data';
+import { readFileAsync, writeFileAsync } from './fileHelpers';
 
 export async function createBackup() {
   const expenses = await getAllExpenses();

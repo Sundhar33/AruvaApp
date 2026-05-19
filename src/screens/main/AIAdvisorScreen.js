@@ -1,15 +1,23 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { useState } from 'react';
+import { ActivityIndicator, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Colors } from '../../constants/colors';
 import { getAIRecommendations } from '../../services/aiAdvisor';
+import { getAllExpenses } from '../../services/data';
 
 const AIAdvisorScreen = () => {
   const [tips, setTips] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const loadTips = async () => {
-    const recs = await getAIRecommendations();
-    setTips(recs);
+    setLoading(true);
+    try {
+      const expenses = await getAllExpenses();
+      const recs = await getAIRecommendations(expenses);
+      setTips(recs);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -21,6 +29,8 @@ const AIAdvisorScreen = () => {
         <TouchableOpacity style={styles.button} onPress={loadTips}>
           <Text style={styles.buttonText}>Get Recommendations</Text>
         </TouchableOpacity>
+
+        {loading && <ActivityIndicator style={{ marginTop: 12 }} />}
 
         {tips.map((t, i) => (
           <View key={i} style={styles.tipCard}>
