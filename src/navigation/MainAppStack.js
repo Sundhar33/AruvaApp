@@ -21,6 +21,11 @@ import BudgetingScreen from '../screens/main/BudgetingScreen';
 import PredictionsScreen from '../screens/main/PredictionsScreen';
 import SearchScreen from '../screens/main/SearchScreen';
 import RecurringExpensesScreen from '../screens/main/RecurringExpensesScreen';
+import ReportsScreen from '../screens/main/ReportsScreen';
+import ExportsScreen from '../screens/main/ExportsScreen';
+import BackupRestoreScreen from '../screens/main/BackupRestoreScreen';
+import AIAdvisorScreen from '../screens/main/AIAdvisorScreen';
+import RecurringAutomationScreen from '../screens/main/RecurringAutomationScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -72,6 +77,11 @@ const AnalyticsStack = () => {
       <Stack.Screen name="PredictionsScreen" component={PredictionsScreen} />
       <Stack.Screen name="SearchScreen" component={SearchScreen} />
       <Stack.Screen name="RecurringExpensesScreen" component={RecurringExpensesScreen} />
+      <Stack.Screen name="ReportsScreen" component={ReportsScreen} />
+      <Stack.Screen name="ExportsScreen" component={ExportsScreen} />
+      <Stack.Screen name="BackupRestoreScreen" component={BackupRestoreScreen} />
+      <Stack.Screen name="AIAdvisorScreen" component={AIAdvisorScreen} />
+      <Stack.Screen name="RecurringAutomationScreen" component={RecurringAutomationScreen} />
     </Stack.Navigator>
   );
 };
