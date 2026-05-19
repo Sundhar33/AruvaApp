@@ -38,6 +38,38 @@ yarn-error.*
 
 app-example
 
-# generated native folders
-/ios
-/android
+# generated native folders (project may include platform folders; ignore build artifacts only)
+/android/app/build/
+/android/.gradle/
+/android/*-release.keystore
+*.jks
+*.keystore
+
+/ios/Pods/
+Podfile.lock
+ios/Podfile.lock
+*.xcworkspace
+*.xcuserstate
+
+# IDEs
+.idea/
+.vscode/
+
+# Local config
+local.properties
+
+# Firebase / Google services
+google-services.json
+GoogleService-Info.plist
+
+# Environment
+.env
+.env.*.local
+
+# Logs and coverage
+npm-debug.*
+yarn-debug.*
+*.log
+coverage/
+.nyc_output/
+

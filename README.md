@@ -1,50 +1,186 @@
-# Welcome to your Expo app 👋
+# Aruva 📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aruva is a modern React Native mobile application designed to provide a smooth, fast, and scalable mobile experience across Android and iOS platforms.
 
-## Get started
+The project focuses on clean UI/UX, reusable components, optimized performance, and professional mobile app architecture.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+# 🚀 Features
 
-2. Start the app
+* Cross-platform mobile app
+* Beautiful and responsive UI
+* Fast navigation experience
+* Reusable components
+* API integration
+* State management support
+* Clean project architecture
+* Scalable codebase
+* Optimized performance
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+# 🛠️ Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Mobile App
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* React Native
+* JavaScript / TypeScript
+* React Navigation
+* Axios
+* Redux Toolkit / Context API
 
-## Get a fresh project
+## Backend
 
-When you're ready, run:
+* Node.js
+* Express.js
 
-```bash
-npm run reset-project
+## Database
+
+* MongoDB / Firebase
+
+---
+
+# ## 📁 Project Structure
+
+```
+src/
+├── components/      # Reusable UI components
+├── screens/         # Application screens
+│   ├── auth/       # Authentication screens
+│   ├── onboarding/ # Onboarding screens
+│   ├── main/       # Main app screens
+│   └── profile/    # Profile screen
+├── navigation/      # Navigation stacks
+├── services/        # API & business logic services
+├── firebase/        # Firebase configuration & services
+├── context/         # Context API providers
+├── utils/           # Utility functions
+├── hooks/           # Custom React hooks
+├── assets/          # Images, icons, fonts
+└── constants/       # App constants & colors
+```
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+# ⚙️ Installation
 
-To learn more about developing your project with Expo, look at the following resources:
+Clone the repository:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+git clone https://github.com/your-username/aruva.git
+```
 
-## Join the community
+Navigate to project directory:
 
-Join our community of developers creating universal apps.
+```bash
+cd aruva
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Install iOS pods:
+
+```bash
+cd ios
+pod install
+cd ..
+```
+
+Start Metro bundler:
+
+```bash
+npm start
+```
+
+Run on Android:
+
+```bash
+npm run android
+```
+
+Run on iOS:
+
+```bash
+npm run ios
+```
+
+---
+
+# 🔥 Environment Variables
+
+Create a `.env` file in the root directory.
+
+Example:
+
+```env
+API_URL=your_api_url
+JWT_SECRET=your_secret
+```
+
+---
+
+# 📸 Screenshots
+
+Add app screenshots here.
+
+```md
+![Home Screen](./screenshots/home.png)
+```
+
+---
+
+# 📦 Build APK
+
+Android release build:
+
+```bash
+cd android
+./gradlew assembleRelease
+```
+
+APK location:
+
+```bash
+android/app/build/outputs/apk/release/
+```
+
+---
+
+# 🚀 Deployment
+
+Publish app using:
+
+* Google Play Store
+* Apple App Store
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit changes
+4. Push to branch
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+Developed by Sundhar.
+
+GitHub: [https://github.com/your-username](https://github.com/your-username)

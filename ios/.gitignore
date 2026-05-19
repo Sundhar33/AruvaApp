@@ -1,0 +1,13 @@
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Provisioning
+*.mobileprovision
+*.p12
