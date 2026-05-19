@@ -1,3 +1,28 @@
+# AruvaApp (SmartSalary)
+
+Simple personal finance React Native app for tracking expenses, budgets, goals, and predictions.
+
+Quick start
+
+1. Install dependencies:
+
+```bash
+yarn install
+```
+
+2. Start Expo (development):
+
+```bash
+yarn start
+```
+
+3. Run on Android/iOS via Expo client or build with native tooling.
+
+Notes
+- AI-related draft notes were removed from the repository.
+- I added and updated `.gitignore` files to ignore platform build artifacts.
+
+If you want, I can commit and push these changes for you.
 # Aruva 📱
 
 Aruva is a modern React Native mobile application designed to provide a smooth, fast, and scalable mobile experience across Android and iOS platforms.
